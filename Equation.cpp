@@ -67,12 +67,12 @@ MyMath::Equation::Root MyMath::LinearEquation::equationRoot() const
 
 std::ostream& MyMath::operator<<(std::ostream& out, const MyMath::LinearEquation& eq)
 {
-	return std::cout << "( " << eq.getA() << "x ^ 2 + " << eq.getB() <<" )";
+	return std::cout << "( " << eq.getA() << "x + " << eq.getB() <<" )";
 }
 
 std::ostream& MyMath::operator<<(std::ostream& out, const QuadraticEquation& eq)
 {
-	return std::cout << "( " << eq.getA() << "x ^ 2 + " << eq.getB() << "x + " << eq.getC() << " )";
+	return std::cout << "( " << eq.getA() << "x^2 + " << eq.getB() << "x + " << eq.getC() << " )";
 }
 
 MyMath::Fraction MyMath::QuadraticEquation::delta() const
